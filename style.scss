@@ -18,30 +18,30 @@ html ,body,h1,h2,h3,h4,h5,h6,p,ul{
   border: 0;
 }
 h1 {
-  display: flex;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 h2 {
-  display: flex;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 h3 {
-  display: flex;
-  font-size: 1.17rem; }
+  font-size: 1.17rem;
+}
 h4 {
-  display: flex;
-  font-size: 1.12rem; }
+  font-size: 1.12rem;
+}
 h5 {
-  display: flex;
-  font-size: .83rem; }
+  font-size: .83rem;
+}
 h6 {
-  display: flex;
-  font-size: .65rem; }
+  font-size: .65rem;
+}
 body{
   background-color: rgb(237,237,237);
 }
 * {
   position: relative;
   box-sizing: border-box;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 a {
