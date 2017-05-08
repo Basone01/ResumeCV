@@ -88,6 +88,12 @@ nav{
 header+section,section+section{
   padding-top: 1.5rem;
 }
+section:nth-child(odd){
+  background-color: rgb(250,250,250);
+}
+section:nth-child(even){
+  background-color: rgb(240,240,240);
+}
 //sizing
 .screen-height{
   height: 100vh;
@@ -116,12 +122,12 @@ header+section,section+section{
   margin: 0.25rem;
 }
 .no-stretch{
-  >*{
+  &>*{
     flex: 0 0 auto;
   }
 }
 .all-stretch{
-  >*{
+  &>*{
     flex: 1;
     align-self: stretch;
   }
@@ -329,6 +335,7 @@ overflow: visible;
   max-width: 48rem;
   font-weight: bold;
   font-size: 1rem;
+  z-index: 1;
   &>.skill-box{
     flex-basis:7rem;
     height:7rem;
@@ -339,8 +346,9 @@ overflow: visible;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(220,220,220,0.5);
+    background-color: rgba(255,255,255,1);
     box-shadow: 0 0 0.5rem black;
+    z-index: 1;
     &>.skill-img{
       text-align: center;
       display: flex;
@@ -349,7 +357,12 @@ overflow: visible;
       align-items: center;
       width: 70%;
       height:70%;
+      &>span{
+        z-index: 2;
+        font-weight: bold;
+        font-size: 1rem;
 
+      }
       &::before{
         content: '';
         position: absolute;
@@ -360,8 +373,8 @@ overflow: visible;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        opacity: 1;
-        z-index: -1;
+        opacity: 0.3;
+        z-index: 1;
       }
 
     }
