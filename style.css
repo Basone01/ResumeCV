@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Asar");
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:500,900");
 :root {
   font-size: 20px;
   font-family: 'Asar';
   letter-spacing: 0.075em;
-  line-height: 1.4; }
+  line-height: 1.4;
+  color: black; }
   @media screen and (min-width: 1560px) {
     :root {
       font-size: 24px; } }
@@ -35,7 +37,7 @@ h6 {
   font-size: .65rem; }
 
 body {
-  background-color: #ededed; }
+  background-color: #bde4e8; }
 
 * {
   position: relative;
@@ -54,6 +56,7 @@ p {
   padding: 1.5em; }
 
 nav {
+  color: black;
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -96,15 +99,10 @@ header + section, section + section {
   padding-top: 1.5rem; }
 
 section:nth-child(odd) {
-  background-color: #fafafa; }
+  background-color: #aadce2; }
 
 section:nth-child(even) {
-  background-color: #f0f0f0; }
-
-.screen-height {
-  height: 100vh;
-  min-height: 640px;
-  max-height: 1080px; }
+  background-color: #aadce2; }
 
 .full-size {
   -webkit-flex: 1;
@@ -371,6 +369,53 @@ section:nth-child(even) {
   clear: both; }
 
 /*--------------extra------------------------------------*/
+.bg-primary {
+  background-color: #bde4e8; }
+
+.bg-secondary {
+  background-color: #3fb0ac; }
+
+.bg-third {
+  background-color: #fae596; }
+
+.bg-fourth {
+  background-color: #fae596; }
+
+.bold {
+  font-weight: bold; }
+
+.font-dark {
+  color: #aadce2; }
+
+.underline {
+  position: relative;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+  .underline::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 0.1rem;
+    background-color: white;
+    top: 90%;
+    left: -55%;
+    margin-top: 4px;
+    display: block; }
+  .underline::after {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 0.3rem;
+    top: 90%;
+    left: -7.5%;
+    border: 0.1rem solid white;
+    border-left: none;
+    border-right: none; }
+
+.little-shadow {
+  box-shadow: 0.05rem 0.05rem 0.1rem black; }
+
 /*Icon*/
 .icon {
   display: inline-block;
@@ -401,6 +446,11 @@ section:nth-child(even) {
   background: url("public/icon/mail.svg");
   background-size: cover; }
 
+#home {
+  background-image: linear-gradient(to right, rgba(189, 228, 232, 0.5) 0%, #bde4e8 65%), url("/public/img/landing.jpg");
+  background-size: cover;
+  background-position: center; }
+
 #profile-pic {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -424,9 +474,7 @@ section:nth-child(even) {
   border-radius: 50%;
   background-image: url("public/img/profile.jpg");
   background-position: center;
-  background-size: cover;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.75) inset;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.75); }
+  background-size: cover; }
 
 #profile-pic-2 {
   overflow: hidden;
@@ -442,7 +490,8 @@ section:nth-child(even) {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow: visible; }
+  overflow: visible;
+  margin: 1rem -0.9rem; }
   #profile-pic-2 div {
     background-image: url("public/img/profile2.jpg");
     background-position: center;
@@ -460,8 +509,8 @@ section:nth-child(even) {
     max-width: 15rem;
     border-radius: 50%; }
 
-.content-space-down > * {
-  margin-bottom: 1rem; }
+.content-space-down > *:not(:last-child) {
+  margin-bottom: 0.1em; }
 
 .content-skills {
   padding: 1rem 1rem;
@@ -489,7 +538,7 @@ section:nth-child(even) {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: white;
+    background-color: #e3f3f5;
     box-shadow: 0 0 0.5rem black;
     z-index: 1; }
     .content-skills > .skill-box > .skill-img {
@@ -522,7 +571,7 @@ section:nth-child(even) {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        opacity: 0.3;
+        opacity: 0.4;
         z-index: 1; }
     .content-skills > .skill-box:nth-child(1) > .skill-img::before {
       background-image: url("public/icon/c.png"); }
@@ -543,7 +592,6 @@ section:nth-child(even) {
 
 .edu {
   height: 7rem;
-  border-radius: 1rem;
   overflow: hidden; }
   .edu > div:nth-child(1) {
     -webkit-flex-basis: 33.33%;
