@@ -30,6 +30,10 @@
       right: 1%
       top: 0%
       font-size: 2rem
+      width: 2rem
+      height: 2rem
+      background-color: $color-prime
+      border-radius: 50%
       line-height: 1
       height: 1em
       cursor: pointer
@@ -37,6 +41,11 @@
       transform: translate(0.5em,-0.75em)
       &:hover
         color: white
+      &::after
+        content: 'x'
+        position: absolute
+        top: -5%
+        left: 25%
 
     .modal-head
       height: 20%

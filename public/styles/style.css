@@ -136,6 +136,10 @@ section:nth-child(even) {
       right: 1%;
       top: 0%;
       font-size: 2rem;
+      width: 2rem;
+      height: 2rem;
+      background-color: #bde4e8;
+      border-radius: 50%;
       line-height: 1;
       height: 1em;
       cursor: pointer;
@@ -145,6 +149,11 @@ section:nth-child(even) {
       transform: translate(0.5em, -0.75em); }
       .modal-overlay .modal .close-btn:hover {
         color: white; }
+      .modal-overlay .modal .close-btn::after {
+        content: 'x';
+        position: absolute;
+        top: -5%;
+        left: 25%; }
     .modal-overlay .modal .modal-head {
       height: 20%;
       padding: 0.5em;

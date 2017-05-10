@@ -15,7 +15,7 @@ $(document).ready(function() {
   $("nav").on('click', 'a', function(event) {
     event.preventDefault();
     var target = $($(this).attr('href'));
-    var nav = $('nav').outerHeight()+20;
+    var nav = $('nav').outerHeight()+10;
     $('body').stop(true, false).animate({scrollTop:target.offset().top-nav},{duration:1000},'swing')
   });
 
