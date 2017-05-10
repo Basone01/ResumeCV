@@ -196,7 +196,9 @@ section:nth-child(even) {
   z-index: 5; }
 
 .screen-height {
-  height: 100vh; }
+  height: 100vh;
+  min-height: 640px;
+  max-height: 1080px; }
 
 .full-size {
   -webkit-flex: 1;
