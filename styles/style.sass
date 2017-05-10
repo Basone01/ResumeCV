@@ -1,0 +1,389 @@
+
+@import "variable"
+@import "root"
+@import "modal"
+
+.nav-fixed
+  position: fixed
+  top: 0
+  width: 97%
+  min-width: 973px
+  margin: 1rem
+  z-index: 5
+
+//sizings
+.screen-height
+  height: 100vh
+  // min-height: 640px
+  // max-height: 1080px
+
+.full-size
+  flex: 1
+  align-self: stretch
+
+.auto-sizing
+  flex: 1
+
+.stretch
+  align-self: stretch
+
+.wrapper
+  max-width: 1920px
+  min-width: 1024px
+  margin: 0 auto
+
+.padding-box
+  padding: 1rem
+
+.margin-box
+  margin: 0.25rem
+
+.no-stretch
+  &>*
+    flex: 0 0 auto
+
+
+.all-stretch
+  &>*
+    flex: 1
+    align-self: stretch
+
+
+.grow-1
+  flex-grow: 1
+
+.grow-2
+  flex-grow: 2
+
+.grow-3
+  flex-grow: 3
+
+.grow-4
+  flex-grow: 4
+
+.grow-5
+  flex-grow: 5
+
+.no-shrink
+  flex-shrink: 1
+
+.size-1-3
+  flex-basis: 33.33%
+
+// position
+.center-top-down
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  flex-wrap: nowrap
+  align-items: center
+
+.top-down
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  flex-wrap: nowrap
+  align-items: flex-start
+
+.left-right
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  flex-wrap: nowrap
+  align-items: stretch
+
+.left-right-full
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  flex-wrap: nowrap
+  align-items: stretch
+  &>*
+    flex: 1
+
+
+.top-down-space-between
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  flex-wrap: nowrap
+  align-items: stretch
+
+.top-down-space-around
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  flex-wrap: nowrap
+  align-items: stretch
+
+.left-right-space-around
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  flex-wrap: nowrap
+  align-items: center
+
+.all-h-center
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  align-content: center
+
+.all-v-center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  align-content: center
+
+
+.auto-line
+  flex-wrap: wrap
+
+/*----------------------------------------------------------------------------*/
+//text
+.text-center
+  text-align: center
+
+.text-left
+  text-align: left
+
+.text-right
+  text-align: right
+
+.text-indent
+  text-indent: 1em
+
+/*-----------------------------------------------------------------------------*/
+.content-fluid
+  // width:1200px
+  width: 100%
+
+.clearfix:after
+  content: ""
+  display: table
+  clear: both
+
+/*--------------extra------------------------------------*/
+// colors
+.bg-primary
+  background-color: $color-prime
+
+.bg-secondary
+  background-color: $color-secondary
+
+.bg-third
+  background-color: $color-third
+
+
+// font
+.bold
+  font-weight: bold
+
+.font-dark
+  color: $color-prime-dark
+
+// decoration
+.underline
+  position: relative
+  display: inline-flex
+  &::before
+    content: ''
+    position: absolute
+    width: 200%
+    height: 0.1rem
+    background-color: white
+    top: 90%
+    left: -55%
+    margin-top: 4px
+    display: block
+
+  &::after
+    content: ''
+    position: absolute
+    width: 110%
+    height: 0.3rem
+    top: 90%
+    left: -7.5%
+    border: 0.1rem solid white
+    border-left: none
+    border-right: none
+
+
+.little-shadow
+  box-shadow: 0.05rem 0.05rem 0.1rem black
+
+/*Icon*/
+.icon
+  display: inline-block
+  width: 24px
+  height: 24px
+  overflow: hidden
+  -webkit-transform: translateY(0.25em)
+  -ms-transform: translateY(0.25em)
+  transform: translateY(0.25em)
+
+.icon-phone
+  background: url("/public/icon/phone.svg")
+  background-size: cover
+
+.icon-line
+  background: url("/public/icon/line.svg")
+  background-size: cover
+
+.icon-facebook
+  background: url("/public/icon/facebook.svg")
+  background-size: cover
+
+.icon-github
+  background: url("/public/icon/github.svg")
+  background-size: cover
+
+.icon-mail
+  background: url("/public/icon/mail.svg")
+  background-size: cover
+
+// id
+#home
+  // color: white
+  background-image: linear-gradient(to right,rgba($color-prime,0.5) 0%,rgba($color-prime,1) 65%),url('/public/img/landing.jpg')
+  background-size: cover
+  background-position: center
+
+#profile-pic
+  display: inline-flex
+  // overflow: hidden
+  height: 50vw
+  max-width: 22rem
+  max-height: 22rem
+  min-height: 15rem
+  min-width: 15rem
+  margin: 2rem
+  flex-shrink: 0
+  flex-grow: 0
+  flex-basis: 50vw
+  border: 5px solid white
+  border-radius: 50%
+  background-image: url('/public/img/profile.jpg')
+  background-position: center
+  background-size: cover
+  box-shadow: 0 0 2rem  rgba(0, 0, 0, 0.75)  inset
+  // box-shadow: 0 0 2rem  rgba(0, 0, 0, 0.75)
+
+#profile-pic-2
+  overflow: hidden
+  display: flex
+  justify-content: space-around
+  flex-direction: column
+  align-items: center
+  overflow: visible
+  margin: 1rem -0.9rem
+  div
+
+    background-image: url('/public/img/profile2.jpg')
+    background-position: center
+    background-size: cover
+    box-shadow: 0 0 2rem  rgba(0, 0, 0, 0.75)  inset
+    box-shadow: 0 0 1rem  rgba(0, 0, 0, 0.75)
+    border: 5px solid white
+    flex: 0 0 25vw
+    width: 25vw
+    min-height: 10rem
+    min-width: 10rem
+    max-height: 15rem
+    max-width: 15rem
+
+    border-radius: 50%
+
+
+.content-space-down
+  &>*:not(:last-child)
+    margin-bottom: 0.1em
+
+
+.content-skills
+  padding: 1rem 1rem
+  max-width: 48rem
+  font-weight: bold
+  font-size: 1rem
+  z-index: 1
+  &>.skill-box
+    flex-basis: 7rem
+    height: 7rem
+    margin: 0.5rem 1.5rem
+    border-radius: 50%
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $color-prime-light
+    box-shadow: 0 0 0.5rem black
+    z-index: 1
+    cursor: pointer
+    &>.skill-img
+      text-align: center
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 70%
+      height: 70%
+      &>span
+        z-index: 2
+        font-weight: bold
+        font-size: 1rem
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        opacity: 0.4
+        z-index: 1
+    &:nth-child(1)>.skill-img
+      &::before
+        background-image: url('/public/icon/c.png')
+    &:nth-child(2)>.skill-img
+      &::before
+        background-image: url('/public/icon/java.png')
+    &:nth-child(3)>.skill-img
+      &::before
+        background-image: url('/public/icon/html5.png')
+    &:nth-child(4)>.skill-img
+      &::before
+        background-image: url('/public/icon/css3.png')
+    &:nth-child(5)>.skill-img
+      &::before
+        background-image: url('/public/icon/javascript.png')
+    &:nth-child(6)>.skill-img
+      &::before
+        background-image: url('/public/icon/nodejs.png')
+    &:nth-child(7)>.skill-img
+      &::before
+        background-image: url('/public/icon/github.png')
+    &:nth-child(8)>.skill-img
+      &::before
+        background-image: url('/public/icon/google.png')
+
+
+
+
+
+
+
+.edu
+  height: 7rem
+  // border-radius: 1rem
+  overflow: hidden
+  box-shadow: 0.1rem 0.1rem 0.2rem black
+  &>div:nth-child(1)
+    flex-basis: 33.33%
+
+  &>div:nth-child(2)
+    flex-basis: 66.66%

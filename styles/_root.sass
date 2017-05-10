@@ -1,0 +1,97 @@
+
+\:root
+  font-size: 20px
+  font-family: $font-primary
+  letter-spacing: 0.075em
+  line-height: 1.4
+  color: $font-color-prime
+  @media screen and (min-width: 1560px)
+    font-size: 24px
+  @media screen and (min-width: 1920px)
+    font-size: 28px
+
+
+
+html ,body,h1,h2,h3,h4,h5,h6,p,ul
+  margin: 0
+  padding: 0
+  border: 0
+
+
+h1
+  font-size: 2rem
+
+h2
+  font-size: 1.5rem
+
+h3
+  font-size: 1.17rem
+
+h4
+  font-size: 1.12rem
+
+h5
+  font-size: .83rem
+
+h6
+  font-size: .65rem
+
+body
+  background-color: $color-prime
+
+*
+  position: relative
+  box-sizing: border-box
+  // border: 1px solid black
+
+
+a
+  text-decoration: none
+  font-weight: bold
+  color: inherit
+  &:visited
+    color: inherit
+
+
+p
+  text-align: left
+  text-indent: 2em
+  padding: 1.5em
+
+nav
+  color: black
+  align-self: stretch
+  display: inline-flex
+  box-shadow: 0px 0px 25px black
+  border-radius: 2rem
+  margin: 1rem
+  position: relative
+  background-color: white
+  ul
+    flex-grow: 1
+    list-style: none
+    display: inline-flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-around
+    li
+      display: inline-flex
+      a
+        padding: 0.5em 1.2em
+        transition: all 0.5s
+        &:hover
+          // background-color: black
+          color: $color-prime-dark
+
+
+
+
+
+header+section,section+section
+  padding-top: 1.5rem
+
+section:nth-child(odd)
+  background-color: $bg-color-1
+
+section:nth-child(even)
+  background-color: $bg-color-2

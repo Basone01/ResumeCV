@@ -4,10 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/public/styles/style.css">
   <title>Surachet's Resume</title>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="/public/js/style.js">
+
+  </script>
+
 </head>
 <body class="center-top-down wrapper">
+
   <header id="home" class="content-fluid screen-height center-top-down ">
     <div class="all-h-center auto-sizing">
       <div class="padding-box left-right-full auto-sizing">
@@ -24,7 +35,7 @@
         </div>
       </div>
     </div>
-    <nav style="position:fix;top:0;">
+    <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#aboutme">About Me</a></li>
@@ -35,7 +46,7 @@
       </ul>
     </nav>
   </header>
-  <section id="aboutme" class="content-fluid screen-height center-top-down">
+  <section id="aboutme" class="content-fluid center-top-down">
     <div class="text-center">
       <h1 class="underline">About Me</h1>
     </div>
@@ -85,7 +96,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </section>
-  <section id="skills" class="content-fluid screen-height center-top-down padding-box">
+  <section id="skills" class="content-fluid center-top-down padding-box">
     <div class="text-center">
       <h1 class="underline">MY SKILLs</h1>
     </div>
@@ -107,7 +118,7 @@
       </div>
       <div class="skill-box">
         <div class="skill-img">
-          <span>CSS3/SCSS</span>
+          <span>CSS3/SASS</span>
         </div>
       </div>
       <div class="skill-box">
@@ -133,7 +144,7 @@
     </div>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </section>
-  <section id="education" class="content-fluid screen-height center-top-down">
+  <section id="education" class="content-fluid center-top-down">
     <div class="text-center">
       <h1 class="underline">Education</h1>
     </div>
@@ -172,5 +183,18 @@
       </div>
     </div>
   </section>
+
+
+  <div class="modal-overlay" id="modal-skill">
+    <div class="modal">
+      <span class="close-btn">x</span>
+      <div class="modal-head">
+        <h1></h1>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+  </div>
 </body>
 </html>
