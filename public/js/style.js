@@ -1,9 +1,12 @@
 $(document).ready(function() {
-  var navtop = $('nav').offset().top;
+
   $(window).scroll(function(event) {
+    var nav = $('nav').outerHeight(true);
+    var header = $('#home').height();
+    var navtop = header-nav;
     var view = $(this)[0].scrollY;
     console.log(view);
-    if(view>navtop-24){
+    if(view>navtop){
       $('nav').addClass('nav-fixed');
     }else{
       $('nav').removeClass('nav-fixed');
@@ -12,7 +15,8 @@ $(document).ready(function() {
   $("nav").on('click', 'a', function(event) {
     event.preventDefault();
     var target = $($(this).attr('href'));
-    $('body').stop(true, false).animate({scrollTop:target.offset().top},{duration:1000},'swing')
+    var nav = $('nav').outerHeight()+20;
+    $('body').stop(true, false).animate({scrollTop:target.offset().top-nav},{duration:1000},'swing')
   });
 
   $(".content-skills").on('click', '.skill-img', function(event) {
