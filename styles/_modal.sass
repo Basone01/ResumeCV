@@ -8,22 +8,23 @@
   background-color: rgba(0, 0, 0, 0.8)
   display: none
   z-index: 3
+  animation-name: fade
+  animation-duration: 0.25s
   .modal
     position: absolute
-    top: 0
+    top: 1rem
     left: 50%
     width: 70%
     height: 70%
     max-width: 720px
     min-width: 30em
-    // max-height: 20em
-
     background-color: white
     border: 0.5rem solid darken($color-prime-dark,40%)
     border-radius: 2rem
     transform: translate(-50%,20%)
-    transition: traslateY 1s
-    .close-btn
+    animation-name: fade,flyup
+    animation-duration: 0.5s
+    .modal-close-btn
       font-family: sans-serif
       position: absolute
       display: inline-block
@@ -70,3 +71,15 @@
 
 .modal-overlay.active
   display: block
+
+@keyframes fade
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes flyup
+  from
+    top: 3rem
+  to
+    top: 1rem

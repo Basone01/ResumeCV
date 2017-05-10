@@ -113,10 +113,14 @@ section:nth-child(even) {
   top: 0;
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
-  z-index: 3; }
+  z-index: 3;
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s; }
   .modal-overlay .modal {
     position: absolute;
-    top: 0;
+    top: 1rem;
     left: 50%;
     width: 70%;
     height: 70%;
@@ -128,8 +132,11 @@ section:nth-child(even) {
     -webkit-transform: translate(-50%, 20%);
     -ms-transform: translate(-50%, 20%);
     transform: translate(-50%, 20%);
-    transition: traslateY 1s; }
-    .modal-overlay .modal .close-btn {
+    -webkit-animation-name: fade,flyup;
+    animation-name: fade,flyup;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s; }
+    .modal-overlay .modal .modal-close-btn {
       font-family: sans-serif;
       position: absolute;
       display: inline-block;
@@ -147,9 +154,9 @@ section:nth-child(even) {
       -webkit-transform: translate(0.5em, -0.75em);
       -ms-transform: translate(0.5em, -0.75em);
       transform: translate(0.5em, -0.75em); }
-      .modal-overlay .modal .close-btn:hover {
+      .modal-overlay .modal .modal-close-btn:hover {
         color: white; }
-      .modal-overlay .modal .close-btn::after {
+      .modal-overlay .modal .modal-close-btn::after {
         content: 'x';
         position: absolute;
         top: -5%;
@@ -185,6 +192,30 @@ section:nth-child(even) {
 
 .modal-overlay.active {
   display: block; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes flyup {
+  from {
+    top: 3rem; }
+  to {
+    top: 1rem; } }
+
+@keyframes flyup {
+  from {
+    top: 3rem; }
+  to {
+    top: 1rem; } }
 
 .nav-fixed {
   position: fixed;
@@ -667,7 +698,10 @@ section:nth-child(even) {
         background-size: contain;
         background-repeat: no-repeat;
         opacity: 0.4;
-        z-index: 1; }
+        z-index: 1;
+        transition: opacity 0.3s; }
+      .content-skills > .skill-box > .skill-img:hover::before {
+        opacity: 1; }
     .content-skills > .skill-box:nth-child(1) > .skill-img::before {
       background-image: url("/public/icon/c.png"); }
     .content-skills > .skill-box:nth-child(2) > .skill-img::before {
