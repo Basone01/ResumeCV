@@ -11,7 +11,7 @@ function nav(){
 }
 
 $(document).ready(function() {
-  $("#loading").remove();
+  $("#loading").fadeOut('slow/1000/fast');
   nav();
   $(window).scroll(function(event) {
     nav();
