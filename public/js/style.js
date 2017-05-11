@@ -11,6 +11,22 @@ function nav(){
 }
 
 $(document).ready(function() {
+  var skills;
+  $.ajax({
+    url: '/public/skills.txt',
+    type: 'GET',
+    dataType: 'text',
+  })
+  .done(function(data) {
+    data = data.replace(/(\r\n|\n|\r)/gm,"");
+    skills=JSON.parse(data);
+  })
+  .fail(function() {
+    console.log("error");
+  })
+  .always(function() {
+  });
+
   $("#loading").fadeOut('slow/1000/fast');
   nav();
   $(window).scroll(function(event) {
@@ -26,12 +42,14 @@ $(document).ready(function() {
   $(".content-skills").on('click', '.skill-img', function(event) {
     event.preventDefault();
     /* Act on the event */
-    var targetData = $(this).children('span').text();;
+    var target = $(this);
+    var targetData = target.children('span').text();
+    var index = target.attr('data-skill')-1;
     var modal = $(".modal-overlay");
     var modalHead = modal.children(".modal").children('.modal-head');
     var modalBody = modalHead.parent().children('.modal-body');
     modalHead.children('h1').text(targetData);
-    modalBody.text('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+    modalBody.html(skills[index])
     modal.addClass('active');
   });
 
@@ -40,7 +58,6 @@ $(document).ready(function() {
     var targetID = $(event.target).attr('id');
     var modal = $(this)
     if(targetID=='modal-skill'){
-      console.log(targetID);
       modal.removeClass('active');
     }
   });

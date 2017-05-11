@@ -1,0 +1,21 @@
+[
+
+    "<h5>Skill Level : Beginner</h5>
+  <p>
+  C is my first language in my life.
+  I just learn it to know natural of programming language that make my life easier in this way.
+  </p>
+  <h5>Interested Level : 35%</h5>
+  <p>Now I've forgotten how to use Pointer.</p>
+  <h5>What I get : </h5>
+  <p>Basic of Programming such as conditions , loops , functions , variables , flow , problem solving skills and etc. </p>
+  "
+  ,
+    "<h5>Skill Level : Intermediate</h5>
+  <p>
+  The Secondary language in my life. I really happy and enjoy to learn it,
+  Because It is the first time of me to coding GUI and mini game in my project
+  and It make me met the OOP concept that I most like!!
+  </p>"
+  
+]
