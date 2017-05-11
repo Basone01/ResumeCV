@@ -3,14 +3,15 @@ function nav(){
   var header = $('#home').height();
   var navtop = header-nav;
   var view = $(this)[0].scrollY;
-  console.log(view);
   if(view>navtop){
     $('nav').addClass('nav-fixed');
   }else{
     $('nav').removeClass('nav-fixed');
   }
 }
+
 $(document).ready(function() {
+  $("#loading").remove();
   nav();
   $(window).scroll(function(event) {
     nav();

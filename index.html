@@ -18,6 +18,9 @@
 
 </head>
 <body class="center-top-down wrapper">
+  <div id="loading" style="background-color:white;z-index:100;position:fixed;width:100%;height:100%">
+
+  </div>
   <header id="home" class="content-fluid screen-height center-top-down ">
     <div class="all-h-center auto-sizing">
       <div class="padding-box left-right-full auto-sizing">
@@ -29,7 +32,7 @@
           <div class="text-center">
             <h1 class="" >SURACHET SANGASAENG</h1>
             <h4>-Computer Science-</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p class="text-indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
         </div>
       </div>
@@ -50,7 +53,7 @@
       <h1 class="underline">About Me</h1>
     </div>
     <div class="left-right-full padding-box content-fluid auto-sizing">
-      <div class="all-v-center text-right padding-box all-stretch content-space-down">
+      <div class="all-v-center text-right padding-box-v all-stretch content-space-down">
         <div class="bg-primary little-shadow padding-box">
           <h3>FULL NAME</h3>
           <h6>SURACHET SANGASAENG</h6>
@@ -71,7 +74,7 @@
       <div id="profile-pic-2" class="bg-primary little-shadow">
         <div></div>
       </div>
-      <div class="all-v-center text-left padding-box all-stretch content-space-down">
+      <div class="all-v-center text-left padding-box-v all-stretch content-space-down">
         <div class="bg-primary little-shadow padding-box">
           <h3>ADDRESS</h3>
           <h6>61 M.7 MUANG,NAKHONPATHOM,THAILAND</h6>
@@ -92,7 +95,7 @@
       </div>
     </div>
     <div class="">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="text-indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </section>
   <section id="skills" class="content-fluid center-top-down padding-box">
@@ -141,7 +144,7 @@
         </div>
       </div>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="text-indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </section>
   <section id="education" class="content-fluid center-top-down">
     <div class="text-center">
@@ -188,32 +191,37 @@
   <section id="portfolio" class="content-fluid center-top-down">
     <div class="text-center">
       <h1 class="underline">PORTFOILO</h1>
+      <p class="text-center">All of my project are unfinished and discontinued.</p>
+      <p class="text-center">But I got many thing form it. Hope you like it. :D</p>
     </div>
     <div class="top-down stretch margin-box-large">
       <div class="center-top-down padding-box stretch">
         <div class="grow-1">
-          <div class="port-img border little-rounded">
-            <img src="/public/img/piginvader.png" alt="" height="100%">
-            <a href="https://github.com/Basone01/PigInvader" style="position:absolute;top:0;width:100%;height:100%"></a>
+          <div class="port-img">
+            <img src="/public/img/piginvader.png" alt=""  class="img-contain border little-rounded">
+            <a href="https://github.com/Basone01/PigInvader" class="abs-cover"></a>
           </div>
         </div>
         <div class="grow-2 padding-box text-center">
-          <h3>Project Name : PIG INVADER - 2015  </h3>
-          <h4>Subject : OBJECT ORIENTED PROGRAMING </h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3>Project Name : <span style="font-weight:lighter">PIG INVADER - 2015</span></h3>
+          <h4>Subject : <span style="font-weight:lighter">OBJECT ORIENTED PROGRAMING</span> </h4>
+          <h4>Using : <span style="font-weight:lighter">JAVA</span> </h4>
+          <p class="text-indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
 
       <div class="center-top-down padding-box stretch">
         <div class="grow-1">
-          <div class="port-img border little-rounded">
-            <img src="/public/img/eztravel.png" alt="" height="100%">
+          <div class="port-img">
+            <img src="/public/img/eztravel.png" alt=""  class="img-contain border little-rounded">
+            <a href="https://github.com/Basone01/eztravel" class="abs-cover"></a>
           </div>
         </div>
         <div class="grow-2 padding-box text-center">
-          <h3>Project Name : EZTRAVEL</h3>
-          <h4>Subject : HUMAN COMPUTER INTERACTION</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3>Project Name : <span style="font-weight:lighter">EZTRAVEL - 2016</span></h3>
+          <h4>Subject : <span style="font-weight:lighter">HUMAN COMPUTER INTERACTION</span></h4>
+          <h4>Using : <span style="font-weight:lighter">HTML/SASS/NODEJS</span> </h4>
+          <p class="text-indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
     </div>
@@ -230,5 +238,6 @@
       </div>
     </div>
   </div>
+
 </body>
 </html>
