@@ -1,169 +1,18 @@
 @import "variable"
 @import "root"
+@import "position"
+@import "sizing"
 @import "modal"
+@import "id"
 
-.nav-fixed
-  position: fixed
-  top: 0
-  width: 97%
-  min-width: 1000px
-  max-width: 1869px
-  // margin: 1rem
-  z-index: 5
-  margin-top: 0.25em
-  transition: margin 0.5s
-
-
-//sizings
-.abs-cover
-  position: absolute
-  top: 0
-  width: 100%
-  height: 100%
-
-.screen-height
-  height: 100vh
-  min-height: 640px
-  max-height: 1080px
-
-.full-size
-  flex: 1
-  align-self: stretch
-
-.auto-sizing
-  flex: 1
-
-.self-center
-  align-self: center
-
-.stretch
-  align-self: stretch
-
-.wrapper
-  max-width: 1920px
-  min-width: 1024px
-  margin: 0 auto
-
-.padding-box
-  padding: 1rem
-
-.padding-box-large
-  padding: 2rem
-
-.padding-v
-  padding-top: 1rem
-  padding-bottom: 1rem
-
-.margin-box
-  margin: 0.25rem
-
-.margin-box-large
-  margin: 2rem
-
-.no-stretch
+//extra position sizing
+.m-3-per-line
   &>*
-    flex: 0 0 auto
+    @media only screen and (max-width: 84rem)
+      flex-basis: 25%
 
 
-.all-stretch
-  &>*
-    flex: 1
-    align-self: stretch
 
-
-.grow-1
-  flex-grow: 1
-
-.grow-2
-  flex-grow: 2
-
-.grow-3
-  flex-grow: 3
-
-.grow-4
-  flex-grow: 4
-
-.grow-5
-  flex-grow: 5
-
-.no-shrink
-  flex-shrink: 1
-
-.size-1-3
-  flex-basis: 33.33%
-
-// position
-.center-top-down
-  display: flex
-  flex-direction: column
-  justify-content: flex-start
-  flex-wrap: nowrap
-  align-items: center
-
-.top-down
-  display: flex
-  flex-direction: column
-  justify-content: flex-start
-  flex-wrap: nowrap
-  align-items: flex-start
-
-.left-right
-  display: flex
-  flex-direction: row
-  justify-content: flex-start
-  flex-wrap: nowrap
-  align-items: stretch
-
-.left-right-full
-  display: flex
-  flex-direction: row
-  justify-content: flex-start
-  flex-wrap: nowrap
-  align-items: stretch
-  &>*
-    flex: 1
-
-
-.top-down-space-between
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-  flex-wrap: nowrap
-  align-items: stretch
-
-.top-down-space-around
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-  flex-wrap: nowrap
-  align-items: stretch
-
-.left-right-space-around
-  display: flex
-  flex-direction: row
-  justify-content: space-around
-  flex-wrap: nowrap
-  align-items: center
-
-.all-h-center
-  display: flex
-  flex-direction: row
-  justify-content: center
-  align-items: center
-  align-content: center
-
-.all-v-center
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-  align-content: center
-
-
-.auto-line
-  flex-wrap: wrap
-
-/*----------------------------------------------------------------------------*/
 //text
 .text-center
   text-align: center
@@ -178,13 +27,7 @@
   text-indent: 2em
 
 /*-----------------------------------------------------------------------------*/
-.content-fluid
-  width: 100%
 
-.clearfix:after
-  content: ""
-  display: table
-  clear: both
 
 /*--------------extra------------------------------------*/
 // colors
@@ -269,60 +112,22 @@
   background: url("/public/icon/mail.svg")
   background-size: cover
 
-// id
-#home
-  // color: white
-  background-image: linear-gradient(to right,rgba($color-prime,0.5) 0%,rgba($color-prime,1) 65%),url('/public/img/landing.jpg')
-  background-size: cover
-  background-position: center
-
-#profile-pic
-  display: inline-flex
-  // overflow: hidden
-  height: 50vw
-  max-width: 22rem
-  max-height: 22rem
-  min-height: 15rem
-  min-width: 15rem
-  margin: 2rem
-  flex-shrink: 0
-  flex-grow: 0
-  flex-basis: 50vw
-  border: 5px solid white
-  border-radius: 50%
-  background-image: url('/public/img/profile.jpg')
-  background-position: center
-  background-size: cover
-  box-shadow: 0 0 2rem  rgba(0, 0, 0, 0.75)  inset
-
-
-#profile-pic-2
-  overflow: hidden
-  display: flex
-  justify-content: space-around
-  flex-direction: column
-  align-items: center
-  overflow: visible
-
-  div
-    background-image: url('/public/img/profile2.jpg')
-    background-position: center
-    background-size: cover
-    box-shadow: 0 0 2rem  rgba(0, 0, 0, 0.75)  inset
-    box-shadow: 0 0 1rem  rgba(0, 0, 0, 0.75)
-    border: 5px solid white
-    flex: 0 0 25vw
-    width: 25vw
-    min-height: 10rem
-    min-width: 10rem
-    max-height: 15rem
-    max-width: 15rem
-    border-radius: 50%
 
 
 .content-space-down
   &>*:not(:last-child)
     margin-bottom: 0.1em
+
+.nav-fixed
+  position: fixed
+  top: 0
+  width: 97%
+  min-width: 1000px
+  max-width: 1869px
+  // margin: 1rem
+  z-index: 5
+  margin-top: 0.25em
+  transition: margin 0.5s
 
 
 .content-skills
@@ -430,9 +235,3 @@
 .item-space
   &>*
     margin: 0.25em 1em
-
-.size-half
-  width: 50%
-
-.size-3-4
-  width: 75%
