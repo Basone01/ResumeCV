@@ -566,6 +566,9 @@ section:nth-child(even) {
     max-width: 15rem;
     border-radius: 50%; }
 
+#contacts {
+  background-image: linear-gradient(to bottom, #aadce2 0%, #90d1d8 20%); }
+
 @media only screen and (max-width: 84rem) {
   .m-3-per-line > * {
     -webkit-flex-basis: 25%;
