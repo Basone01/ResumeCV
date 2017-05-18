@@ -1,7 +1,7 @@
 function nav(){
   var nav = $('nav').outerHeight(true);
   var header = $('#home').height();
-  var navtop = header-nav;
+  var navtop = header;
   var view = $(this)[0].scrollY;
   if(view>navtop){
     $('nav').addClass('nav-fixed');

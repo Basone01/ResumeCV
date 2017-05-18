@@ -2,6 +2,7 @@
 @import "root"
 @import "position"
 @import "sizing"
+@import "animate"
 @import "modal"
 @import "id"
 
@@ -118,6 +119,33 @@
   &>*:not(:last-child)
     margin-bottom: 0.1em
 
+.nav
+  color: black
+  align-self: stretch
+  display: inline-flex
+  box-shadow: 0px 0px 25px black
+  border-radius: 2rem
+  margin: 1rem
+  margin-bottom: 1.5rem
+  position: relative
+  background-color: white
+  ul
+    flex-grow: 1
+    list-style: none
+    display: inline-flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-around
+    li
+      display: inline-flex
+      a
+        padding: 0.5em 1.2em
+        transition: all 0.5s
+        &:hover
+          color: $color-prime-dark
+
+
+
 .nav-fixed
   position: fixed
   top: 0
@@ -127,7 +155,10 @@
   // margin: 1rem
   z-index: 5
   margin-top: 0.25em
-  transition: margin 0.5s
+  // transition: margin 0.5s
+  top: 0
+  animation-name: flydown
+  animation-duration: 0.5s
 
 
 .content-skills
@@ -216,6 +247,32 @@
 .port-img
   width: 70%
   margin: 0 auto
+  overflow: hidden
+  &::after
+    content: ""
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 100%
+    left: 0
+    bottom: 0
+    right: 0
+    margin: 0.2em
+    transition: all 0.5s
+    background-color: rgba(255, 255, 255, 0.4)
+  &:hover
+    &::after
+      content: "Go To Github"
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+  img
+    display: block
+  a
+    z-index: 1
 
 
 .img-cover
@@ -235,3 +292,8 @@
 .item-space
   &>*
     margin: 0.25em 1em
+
+.fa-hover
+  transition: color 0.3s
+  &:hover
+    color: $color-prime-light

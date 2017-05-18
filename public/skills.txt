@@ -7,7 +7,7 @@
   </p>
   <h5>Interested Level : 35%</h5>
   <h5>What I get : </h5>
-  <p>Basic of Programming such as conditions , loops , functions , variables , flow , problem solving skills and etc. But I've forgotten something such as Pointer</p>
+  <p>Basic of Programming such as conditions , loops , functions , variables , flow , problem solving skills and etc.</p>
   "
   ,
     "<h5>Skill Level : Intermediate</h5>
@@ -16,9 +16,44 @@
   Because It is the first time of me to coding GUI and mini game in my project
   and It make me met the OOP concept that I most like!!
   </p>
-  <h5>Interested Level : 75%</h5>
+  <h5>Interested Level : 65%</h5>
   <h5>What I get : </h5>
   <p>OOP Concept, Simple JAVA GUI , Some GUI Life Cycle , Event Handler</p>
+  ",
   "
+  <h5>Skill Level : Intermediate</h5>
+  <p>
+  A major change of my programmer way!! At first time I can't write anything from it, I don't know how it work.
+  Until I was found some thing that I misunderstand, I think I must know how it work before start coding but...
+  HTML is never work!! It just stay and wait for its friends (CSS and Javascript<code>)</code> to let them work together.
+  </p>
+  <h5>Interested Level : 50%</h5>
+  <h5>What I get : </h5>
+  <p>Layout tag design , attribute and custom attribute , Realise that every pure HTML tag has default CSS and Javascript on itself.</p>
+  ",
+  "
+  <h5>Skill Level : Almost Intermediate</h5>
+  <p>
+  It make me shock on how powerful that it can do. I think it can combine and adapt to create almost every wonderful thing,
+  But it is one reason that make me think \"I'm not good at Front-End\" because the one thing that I think it is the hardest thing in CSS,
+  It is \"Naming the CSS class name\" (LoL!!~<code>)</code>, I can't name it perfectly to read and understand immediately that make my every class name is very long.
+  </p>
+  <h5>Interested Level : 70%</h5>
+  <h5>What I get : </h5>
+  <p>Styling HTML tag, Animation, Effect, Layout (I use flexbox as main layout.<code>)</code>, CSS Preprocessor(SASS/SCSS<code>)</code></p>
+  <p>P.S. 90% of my current CSS skills are on this page.</p>
+  ",
+  "
+  <h5>Skill Level : Beginner</h5>
+  <p>
+  Last of Front-End Trinity that I've try, Make more enjoy to my web development with the first library \"JQuery\"
+  with the first impression on short function of DOM, AJAX, Animation. It told me \"UI is not every thing\" And lead the logical programming to me again.
+  And it has changed my world again with NodeJS...
+  </p>
+  <h5>Interested Level : 80%</h5>
+  <h5>What I get : </h5>
+  <p>DOM, AJAX, Animate, Know they have a large library world that can make my life easier.</p>
+  "
+
 
 ]

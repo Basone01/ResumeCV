@@ -22,7 +22,7 @@
     border: 0.5rem solid darken($color-prime-dark,40%)
     border-radius: 2rem
     transform: translate(-50%,20%)
-    animation-name: fade,flyup
+    animation-name: modal-in
     animation-duration: 0.5s
     .modal-close-btn
       font-family: sans-serif
@@ -68,18 +68,16 @@
       min-height: 10em
       max-height: 17.5em
       overflow-y: scroll
+      p
+        font-size: 0.8rem
 
 .modal-overlay.active
   display: block
 
-@keyframes fade
+@keyframes modal-in
   from
     opacity: 0
-  to
-    opacity: 1
-
-@keyframes flyup
-  from
     top: 3rem
   to
+    opacity: 1
     top: 1rem

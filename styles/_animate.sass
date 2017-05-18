@@ -1,0 +1,26 @@
+@keyframes fade
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes flyup
+  from
+    transform: translateY(25%)
+  to
+    transform: translateY(0%)
+
+@keyframes flydown
+  from
+    transform: translateY(-150%)
+  to
+    transform: translateY(0%)
+
+
+.fade-up
+    animation-name: fade,flyup
+    animation-duration: 0.5s
+
+.fade
+  animation-name: fade
+  animation-duration: 0.5s
