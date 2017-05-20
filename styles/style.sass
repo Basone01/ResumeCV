@@ -27,6 +27,8 @@
 .text-indent
   text-indent: 2em
 
+.text-color-sub
+  color: grey
 /*-----------------------------------------------------------------------------*/
 
 
@@ -83,36 +85,8 @@
   border: 0.2em solid black
 .little-rounded
   border-radius: 0.2em
-/*Icon*/
-.icon
-  display: inline-block
-  width: 24px
-  height: 24px
-  overflow: hidden
-  -webkit-transform: translateY(0.25em)
-  -ms-transform: translateY(0.25em)
-  transform: translateY(0.25em)
-
-.icon-phone
-  background: url("/public/icon/phone.svg")
-  background-size: cover
-
-.icon-line
-  background: url("/public/icon/line.svg")
-  background-size: cover
-
-.icon-facebook
-  background: url("/public/icon/facebook.svg")
-  background-size: cover
-
-.icon-github
-  background: url("/public/icon/github.svg")
-  background-size: cover
-
-.icon-mail
-  background: url("/public/icon/mail.svg")
-  background-size: cover
-
+.rounded
+  border-radius: 50%
 
 
 .content-space-down
@@ -260,7 +234,7 @@
     right: 0
     margin: 0.2em
     transition: all 0.5s
-    background-color: rgba(255, 255, 255, 0.4)
+    background-color: rgba(0, 0, 0, 0.4)
   &:hover
     &::after
       content: "Go To Github"

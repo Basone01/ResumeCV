@@ -53,6 +53,43 @@
   <h5>Interested Level : 80%</h5>
   <h5>What I get : </h5>
   <p>DOM, AJAX, Animate, Know they have a large library world that can make my life easier.</p>
+  ",
+  "
+  <h5>Skill Level : Beginner</h5>
+  <p>
+  In the server-side programming, PHP is the first language that I've tried in my classroom, I didn't like it much because of some limitation of it.
+  After that I've found some word call \"MEAN Stack\", That bring me to javascript world and search about NodeJS and enjoy the module system at first time,
+  And more more more from a lot of library/framework that come with it. I've tried Express, MongoDB, Everything work!! But I got some problems on the last framework...
+  Angular 2 because it is the first time of me on component style web programming, I have to practice more to know all features of it.
+  </p>
+  <p>
+  I like to coding in module style in NodeJS, It make me decided to go on this way, Now I want to be A Back-End Developer. :)
+  </p>
+  <h5>Interested Level : 90%</h5>
+  <h5>What I get : </h5>
+  <p>NPM , Express , Server-Side Programming , Javascript</p>
+  ",
+  "
+  <h5>Skill Level : Beginner</h5>
+  <p>
+  First version control in my life, It make my life easier to share my code with my team, And good to keep all of my code on Github.
+  </p>
+  <p>
+  P.S. I just only use it to commit my code and push it to Github, And a little revert to restore my work.
+  </p>
+  <h5>Interested Level : 30%</h5>
+  <h5>What I get : </h5>
+  <p>Commit , Push , Revert</p>
+  "
+  ,
+  "
+  <h5>Skill Level : N/A</h5>
+  <p>
+  This is not a skill but it is one of my habits, I always search for solving every problems that I've found on my work,
+  And search for sure syntax of any code that I don't know before use it.
+  </p>
+  <h5>What I get : </h5>
+  <p>It told me \"You are not alone\", And it make me survival to this day. (LOL!!~<code>)</code></p>
   "
 
 

@@ -5,10 +5,12 @@ function nav(){
   var view = $(this)[0].scrollY;
   if(view>navtop){
     $('nav').addClass('nav-fixed');
-  }else{
+  }else if(view<navtop-nav){
     $('nav').removeClass('nav-fixed');
   }
 }
+
+
 
 $(document).ready(function() {
   var skills;
