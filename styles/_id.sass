@@ -55,3 +55,35 @@
 
 #contacts
   background-image: linear-gradient(to bottom,rgba($bg-color-1, 1) 0%,darken($color-prime,12%) 20%)
+
+#message
+  margin-top: 1rem
+  align-self: stretch
+
+  label[for="message-head"]
+    cursor: pointer
+    font-weight: bold
+    &:hover
+      text-shadow: 0 0 1em grey
+  #message-head
+    display: none
+  #message-body
+    display: flex
+    overflow: hidden
+    align-self: stretch
+    margin-top: 1em
+    div
+      border: 0.25em solid black
+      display: block
+      width: 100%
+      border-radius: 1em
+      background-color: white
+
+  #message-head + #message-body
+    height: 0px
+    animation-name: collapse
+    animation-duration: 0.5s
+  #message-head:checked + #message-body
+    height: 20rem
+    animation-name: uncollapse
+    animation-duration: 0.5s

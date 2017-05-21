@@ -26,7 +26,8 @@
 
 .text-indent
   text-indent: 2em
-
+.text-indent-large
+  text-indent: 4em
 .text-color-sub
   color: grey
 /*-----------------------------------------------------------------------------*/
@@ -180,7 +181,7 @@
         opacity: 0.4
         z-index: 1
         transition: opacity 0.3s
-      &:hover::before
+    &:hover>.skill-img::before
         opacity: 1
     &:nth-child(1)>.skill-img
       &::before

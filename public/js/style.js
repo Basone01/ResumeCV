@@ -41,10 +41,10 @@ $(document).ready(function() {
     $('body').stop(true, false).animate({scrollTop:target.offset().top-nav},{duration:1000},'swing')
   });
 
-  $(".content-skills").on('click', '.skill-img', function(event) {
+  $(".skill-box").on('click', function(event) {
     event.preventDefault();
     /* Act on the event */
-    var target = $(this);
+    var target = $(this).children('.skill-img');
     var targetData = target.children('span').text();
     var index = target.attr('data-skill')-1;
     var modal = $(".modal-overlay");

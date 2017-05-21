@@ -415,6 +415,30 @@ section:nth-child(even) {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s; }
 
+@-webkit-keyframes uncollapse {
+  0% {
+    height: 0; }
+  100% {
+    height: 20rem; } }
+
+@keyframes uncollapse {
+  0% {
+    height: 0; }
+  100% {
+    height: 20rem; } }
+
+@-webkit-keyframes collapse {
+  0% {
+    height: 20rem; }
+  100% {
+    height: 0px; } }
+
+@keyframes collapse {
+  0% {
+    height: 20rem; }
+  100% {
+    height: 0px; } }
+
 .modal-overlay {
   position: fixed;
   width: 100%;
@@ -593,6 +617,47 @@ section:nth-child(even) {
 #contacts {
   background-image: linear-gradient(to bottom, #aadce2 0%, #90d1d8 20%); }
 
+#message {
+  margin-top: 1rem;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch; }
+  #message label[for="message-head"] {
+    cursor: pointer;
+    font-weight: bold; }
+    #message label[for="message-head"]:hover {
+      text-shadow: 0 0 1em grey; }
+  #message #message-head {
+    display: none; }
+  #message #message-body {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    margin-top: 1em; }
+    #message #message-body div {
+      border: 0.25em solid black;
+      display: block;
+      width: 100%;
+      border-radius: 1em;
+      background-color: white; }
+  #message #message-head + #message-body {
+    height: 0px;
+    -webkit-animation-name: collapse;
+    animation-name: collapse;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s; }
+  #message #message-head:checked + #message-body {
+    height: 20rem;
+    -webkit-animation-name: uncollapse;
+    animation-name: uncollapse;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s; }
+
 @media only screen and (max-width: 84rem) {
   .m-3-per-line > * {
     -webkit-flex-basis: 25%;
@@ -610,6 +675,9 @@ section:nth-child(even) {
 
 .text-indent {
   text-indent: 2em; }
+
+.text-indent-large {
+  text-indent: 4em; }
 
 .text-color-sub {
   color: grey; }
@@ -790,8 +858,8 @@ section:nth-child(even) {
         opacity: 0.4;
         z-index: 1;
         transition: opacity 0.3s; }
-      .content-skills > .skill-box > .skill-img:hover::before {
-        opacity: 1; }
+    .content-skills > .skill-box:hover > .skill-img::before {
+      opacity: 1; }
     .content-skills > .skill-box:nth-child(1) > .skill-img::before {
       background-image: url("/public/icon/c.png"); }
     .content-skills > .skill-box:nth-child(2) > .skill-img::before {
