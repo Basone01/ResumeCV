@@ -310,6 +310,14 @@ section:nth-child(even) {
 .margin-box-large {
   margin: 2rem; }
 
+.margin-h {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem; }
+
+.margin-h-large {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
 .no-stretch > * {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -664,12 +672,6 @@ section:nth-child(even) {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%; } }
 
-.font-white {
-  color: white; }
-
-.font-light {
-  font-weight: lighter; }
-
 .text-center {
   text-align: center; }
 
@@ -702,8 +704,18 @@ section:nth-child(even) {
 .bold {
   font-weight: bold; }
 
+.font-white {
+  color: white; }
+
+.font-light {
+  font-weight: lighter; }
+
 .font-dark {
   color: #aadce2; }
+
+.bg-light {
+  background-color: #bde4e8;
+  box-shadow: 0 0 1em #aadce2 inset; }
 
 .underline {
   position: relative;
