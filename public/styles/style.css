@@ -664,6 +664,12 @@ section:nth-child(even) {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%; } }
 
+.font-white {
+  color: white; }
+
+.font-light {
+  font-weight: lighter; }
+
 .text-center {
   text-align: center; }
 
@@ -915,6 +921,7 @@ section:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.4); }
   .port-img:hover::after {
     content: "Go To Github";
+    color: white;
     position: absolute;
     top: 0;
     left: 0;

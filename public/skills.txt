@@ -18,7 +18,7 @@
   </p>
   <h5>Interested Level : 65%</h5>
   <h5>What I get : </h5>
-  <p>OOP Concept, Simple JAVA GUI , Some GUI Life Cycle , Event Handler</p>
+  <p>OOP Concept, Simple JAVA GUI , Some GUI Life Cycle , Event Handler, Thread</p>
   ",
   "
   <h5>Skill Level : Intermediate</h5>
@@ -41,7 +41,6 @@
   <h5>Interested Level : 70%</h5>
   <h5>What I get : </h5>
   <p>Styling HTML tag, Animation, Effect, Layout (I use flexbox as main layout.<code>)</code>, CSS Preprocessor(SASS/SCSS<code>)</code></p>
-  <p>P.S. 90% of my current CSS skills are on this page.</p>
   ",
   "
   <h5>Skill Level : Beginner</h5>
