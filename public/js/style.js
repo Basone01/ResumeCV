@@ -38,7 +38,7 @@ $(document).ready(function() {
     event.preventDefault();
     var target = $($(this).attr('href'));
     var nav = $('nav').outerHeight()+10;
-    $('body').stop(true, false).animate({scrollTop:target.offset().top-nav},{duration:1000},'swing')
+    $("html, body").stop(true, false).animate({scrollTop:target.offset().top-nav},{duration:1000},'swing')
   });
 
   $(".skill-box").on('click', function(event) {
